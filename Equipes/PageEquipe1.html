@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/switch.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipe 1</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            color: #fff;
+        }
+
+        #backgroundImage {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            top: 0;
+            left: 0;
+
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body class="page-equipe">
+    <input style="opacity: 0;" type="checkbox" id="screen" name="screen">
+    <main class="nintendo-switch">
+        <a id="leftButton" class="actions left" for="screen">
+            <i class="minus">-</i>
+            <div class="analogic">
+                <div class="center-circle"></div>
+            </div>
+            <div class="buttons">
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+            </div>
+            <div class="square"></div>
+        </a>
+        <label class="middle" for="screen">
+            <div class="screen">
+                <div class="glass"></div>
+                <img id="teamImage" src="../img/Equipe2.jpg" alt="">
+                </span>
+            </div>
+        </label>
+        <a id="rightButton" class="actions right" for="screen">
+            <i class="plus">+</i>
+            <div class="analogic">
+                <div class="center-circle"></div>
+            </div>
+            <div class="buttons">
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+            </div>
+            <div class="circle"></div>
+        </a>
+    </main>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
