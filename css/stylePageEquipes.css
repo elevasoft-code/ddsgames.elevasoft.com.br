@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ font-family: 'Anton', sans-serif;
+  font-weight: 200;
+  
+}
+
+body {
+  background: #42455a;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    color: #e0ffff;
+}
+
+/* section:nth-child(1) {
+  color: #e0ffff;
+}
+
+section:nth-child(2) {
+  color: #42455a;
+  background: #e0ffff;
+}
+
+section:nth-child(3) {
+  color: #e0ffff;
+  background-color: #fff;
+}
+
+section:nth-child(4) {
+    color: #e0ffff;
+} */
+
+section .container {
+  margin: 100px;
+}
+
+section h1 {
+  font-size: 3rem;
+  margin: 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  /* text-transform: uppercase; */
+}
+
+section .text-container {
+  display: flex;
+}
+
+section .text-container .text-box {
+  margin: 20px;
+  padding: 20px;
+  background: #00c2cb;
+}
+
+section .text-container .text-box h3 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  section h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  section .text-container {
+    flex-direction: column;
+  }
+}
+
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.eq1 {
+  z-index: 10;
+  background-size: 100%;
+  background-image: url("../img/Equipe1.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;  
+  background-position: center center;
+}
+
+.container--eq1 {
+  position: relative;
+  height: 100%;
+}
+
+.container--eq1::before {
+  content: "";
+  background-image: url("../img/Equipe1.jpg");
+  background-size: cover;
+  background-color: #42455a;
+  opacity: 0.5;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: blur(5px);  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;  
+}
+
+.description > .container {
+  margin: auto;
+  text-align: center;
+  font-size: larger;
+  max-width: 600px;
+}
+
+.eq2 {
+    z-index: 10;
+  background-size: 100%;
+  background-image: url("../img/Equipe2.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.container--eq2 {
+  position: relative;
+  height: 100%;
+}
+
+.container--eq2::before {
+  content: "";
+  background-image: url("../img/Equipe2.jpg");
+  background-size: cover;
+  background-color: #42455a;
+  opacity: 0.5;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: blur(5px); 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+}
+
+.description > .container {
+  margin: auto;
+  text-align: center;
+  font-size: larger;
+  max-width: 600px;
+}
+
+.eq3 {
+  z-index: 10;
+  background-image: url("../img/Equipe3.jpg");
+  background-size: 100%;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.container--eq3 {
+  position: relative;
+  height: 100%;
+}
+
+.container--eq3::before {
+  content: "";
+  background-image: url("../img/Equipe3.jpg");
+  background-size: cover;
+  background-color: #42455a;
+  opacity: 0.5;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: blur(5px); 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+}
+
+.description > .container {
+  margin: auto;
+  text-align: center;
+  font-size: larger;
+  max-width: 600px;
+}
+
+.eq4 {
+  z-index: 10;
+  background-image: url("../img/Equipe4.jpg");
+  background-size: 100%;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.container--eq4 {
+  position: relative;
+  height: 100%;
+}
+
+.container--eq4::before {
+  content: "";
+  background-image: url("../img/Equipe4.jpg");
+  background-size: cover;
+  background-color: #42455a;
+  opacity: 0.5;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: blur(5px); 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+}
+
+.description > .container {
+  margin: auto;
+  text-align: center;
+  font-size: larger;
+  max-width: 600px;
+}
+
+.eq5 {
+  z-index: 10;
+  background-image: url("../img/Equipe5.jpg");
+  background-size: 100%;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.container--eq5 {
+  position: relative;
+  height: 100%;
+}
+
+.container--eq5::before {
+  content: "";
+  background-image: url("../img/Equipe5.jpg");
+  background-size: cover;
+  background-color: #42455a;
+  opacity: 0.5;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: blur(5px);  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;  
+}
+
+.description > .container {
+  margin: auto;
+  text-align: center;
+  font-size: larger;
+  max-width: 600px;
+}
+
+.eq6 {
+  z-index: 10;
+  background-image: url("../img/Equipe6.jpg");
+  background-size: 100%;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.container--eq6 {
+  position: relative;
+  height: 100%;
+}
+
+.container--eq6::before {
+  content: "";
+  background-image: url("../img/Equipe6.jpg");
+  background-size: cover;
+  background-color: #42455a;
+  opacity: 0.5;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: blur(5px);  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;  
+}
+
+.description > .container {
+  margin: auto;
+  text-align: center;
+  font-size: larger;
+  max-width: 600px;
+}
+
+.eq7 {
+  z-index: 10;
+  background-image: url("../img/Equipe7.jpg");
+  background-size: 100%;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.container--eq7 {
+  position: relative;
+  height: 100%;
+}
+
+.container--eq7::before {
+  content: "";
+  background-image: url("../img/Equipe7.jpg");
+  background-size: cover;
+  background-color: #42455a;
+  opacity: 0.5;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: blur(5px);  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;  
+}
+
+.description > .container {
+  margin: auto;
+  text-align: center;
+  font-size: larger;
+  max-width: 600px;
+}
+
+.eq8 {
+  z-index: 10;
+  background-image: url("../img/Equipe8.jpg");
+  background-size: 100%;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.container--eq8 {
+  position: relative;
+  height: 100%;
+}
+
+.container--eq8::before {
+  content: "";
+  background-image: url("../img/Equipe8.jpg");
+  background-size: cover;
+  background-color: #42455a;
+  opacity: 0.5;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: blur(5px); 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+}
+
+.description > .container {
+  margin: auto;
+  text-align: center;
+  font-size: larger;
+  max-width: 600px;
+}
+
+.eq9 {
+  z-index: 10;
+  background-image: url("../img/Equipe9.jpg");
+  background-size: 100%;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.container--eq9 {
+  position: relative;
+  height: 100%;
+}
+
+.container--eq9::before {
+  content: "";
+  background-image: url("../img/Equipe9.jpg");
+  background-size: cover;
+  background-color: #42455a;
+  opacity: 0.5;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: blur(5px); /* Adjust the pixel value to control the blur intensity */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.description > .container {
+  margin: auto;
+  text-align: center;
+  font-size: larger;
+  max-width: 600px;
+}

@@ -1,23 +1,18 @@
-/* Estilos para o corpo (body) */
 body {
   margin: 0;
   overflow: hidden;
 }
-
-/* Estilos para o contêiner do GIF */
 #gif-container {
   width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('/img/Template.png');
+  background-image: url("/img/Template.png");
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
-
-/* Estilos para um link invisível */
 #invisible-link {
   position: absolute;
   width: 20%;
@@ -37,13 +32,9 @@ body {
   left: 0;
   z-index: -1;
 }
-
-/* Estilos comuns a todos os elementos */
 * {
   box-sizing: border-box;
 }
-
-/* Media query para telas menores */
 @media only screen and (max-width: 600px) {
   #invisible-link {
     width: 30%;
