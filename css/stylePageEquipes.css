@@ -10,7 +10,7 @@
 }
 
 body {
-  background: #42455a;
+  background: #000000;
 }
 
 section {
@@ -18,7 +18,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-    color: #e0ffff;
+    color: #ffffff;
 }
 
 /* section:nth-child(1) {

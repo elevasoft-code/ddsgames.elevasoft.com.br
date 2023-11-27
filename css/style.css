@@ -1,9 +1,9 @@
 body {
   margin: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 #gif-container {
-  width: 100vw;
+  max-width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -13,25 +13,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
-#invisible-link {
-  position: absolute;
-  width: 20%;
-  height: 18%;
-  top: 41%;
-  left: 40%;
-  opacity: 0;
-  z-index: 1;
-}
 
-#invisible-link::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
 * {
   box-sizing: border-box;
 }
