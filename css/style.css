@@ -18,10 +18,6 @@ body {
   box-sizing: border-box;
 }
 @media only screen and (max-width: 600px) {
-  #invisible-link {
-    width: 30%;
-    height: 25%;
-    top: 30%;
-    left: 35%;
-  }
+  
+  
 }
