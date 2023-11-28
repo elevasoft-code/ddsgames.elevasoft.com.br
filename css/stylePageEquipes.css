@@ -6,6 +6,7 @@
   box-sizing: border-box;
  font-family: 'Anton', sans-serif;
   font-weight: 200;
+  text-align: justify;
   
 }
 
@@ -175,7 +176,7 @@ section .text-container .text-box h3 {
 
 .description > .container {
   margin: auto;
-  text-align: center;
+  text-align: justify;
   font-size: larger;
   max-width: 600px;
 }
